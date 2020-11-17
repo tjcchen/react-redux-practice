@@ -11,7 +11,7 @@ const Todo = ({ text, completed }) => {
   )
 };
 
-Todo.prototype = {
+Todo.propTypes = {
   text: PropTypes.string.isRequired,
   completed: PropTypes.bool.isRequired
 };
