@@ -1,0 +1,20 @@
+{
+  "name": "react-redux-practice",
+  "version": "1.0.0",
+  "description": "A personal practice project working with react &amp; redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjcchen/react-redux-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tjcchen/react-redux-practice/issues"
+  },
+  "homepage": "https://github.com/tjcchen/react-redux-practice#readme"
+}
