@@ -6,7 +6,8 @@ const AddTodo = ({ dispatch }) => {
   let input;
 
   return (
-    <div>
+    <div className="todo-form">
+      <h4>Add Todo List</h4>
       <form
         onSubmit= { e =>
           {

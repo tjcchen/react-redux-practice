@@ -5,7 +5,7 @@ import TodoList from '../components/TodoList';
 // React stateless component, please note its syntax
 // () => (<input />);
 const App = () => (
-  <div>
+  <div className="wrapper">
     <AddTodo />
     <TodoList />
   </div>

@@ -1,6 +1,6 @@
 @bgColor: #f1f1f1;
 @fontSize: 16px;
-@fontFamily: arial;
+@fontFamily: sans-serif;
 
 * { padding: 0; margin: 0; box-sizing: border-box; }
 
@@ -8,4 +8,22 @@ body {
   background: @bgColor;
   font-size: @fontSize;
   font-family: @fontFamily;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 20px auto;
+
+  .todo-form {
+    margin: 0 2px 4px 0;
+
+    h4 {
+      margin-bottom: 4px;
+    }
+  }
+
+  ul {
+    list-style-type: decimal;
+    list-style-position: inside;
+  }
 }
