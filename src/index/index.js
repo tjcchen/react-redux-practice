@@ -1,15 +1,16 @@
 import React from 'react';
 import { render } from 'react-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import rootReducer from './reducers';
+import App from './components/App';
 import './index.less';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>Index Page</div>
-    );
-  }
-}
-
+const store = createStore(rootReducer);
 const rootElement = document.getElementById('root');
 
-render(<App />, rootElement);
+render(
+<Provider store={ store }>
+  <App />
+</Provider>
+, rootElement);
