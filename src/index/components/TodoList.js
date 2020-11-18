@@ -2,18 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Todo from './Todo';
+import { toggleTodo } from '../actions';
 
-const TodoList = ({ todos }) => {
+const TodoList = ({ todos, toggleTodo }) => {
   // todo: {id: 0, text: "aaa", completed: false}
 
   return (<ul>
     {
       todos && todos.length ? todos.map(todo =>
         (
-          <Todo key={ `todo-${todo.id}` } { ...todo } />
+          <Todo key={ `todo-${todo.id}` } { ...todo } onClick={ () => toggleTodo(todo.id) } />
         ) 
       ) :
-      'Oooops, no todos!'
+      'Oops, no todos!'
     }
   </ul>)
 };
@@ -33,4 +34,4 @@ const mapStateToProps = (state) => {
   return { todos };
 };
 
-export default connect(mapStateToProps)(TodoList);
+export default connect(mapStateToProps, { toggleTodo })(TodoList);
