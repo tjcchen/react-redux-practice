@@ -16,7 +16,7 @@ const TodoList = ({ todos, toggleTodo }) => {
       ) :
       'Oops, no todos!'
     }
-  </ul>)
+  </ul>);
 };
 
 TodoList.propTypes = {
@@ -26,7 +26,8 @@ TodoList.propTypes = {
       text: PropTypes.string.isRequired,
       completed: PropTypes.bool.isRequired
     })
-  ).isRequired
+  ).isRequired,
+  toggleTodo: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state) => {
