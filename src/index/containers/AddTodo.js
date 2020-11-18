@@ -16,7 +16,9 @@ const AddTodo = ({ dispatch }) => {
               return;
             }
 
+            // eg: store.dispatch({type: 'counter/incremented'})
             dispatch(addTodo(input.value));
+
             input.value = '';
           }
         }
